@@ -10,6 +10,8 @@ Welcome to Sphinxy's documentation! Edited by Andrea.
    :maxdepth: 2
    :caption: Contents:
 
+   modules
+
 A picture of the Egyptian Sphinx.
 ----------------------------------
 .. image:: _static/sphinx.png

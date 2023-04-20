@@ -7,6 +7,11 @@ class IncorrectAnswer(Exception):
 
 class Sphinx:
     def __init__(self, name: str):
+        """This produces a riddle and the answer.
+
+        Args:
+            name (str): riddle
+        """
         self._name = name
         self._riddle = Riddle(
             question=(
@@ -17,6 +22,11 @@ class Sphinx:
         )
 
     def introduce(self) -> str:
+        """This has the bot introduce itself.
+
+        Returns:
+            str: _description_
+        """
         return (
             f"Greetings, mortals. I am {self._name}. I have guarded the city of Thebes"
             "for centuries and posed riddles to those who dared to approach me."
@@ -35,7 +45,7 @@ class Sphinx:
         return (self._riddle.question, hint)
 
     def check_riddle_answer(self, answer: str, return_hint: bool = False) -> str:
-         """Evaluates the given answer to the riddle.
+        """Evaluates the given answer to the riddle.
 
         Args:
             answer (str): The given answer to the riddle.

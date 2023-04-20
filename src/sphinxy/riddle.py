@@ -8,7 +8,7 @@ class Riddle:
     answer: str
 
     def check_answer(self, answer: str) -> bool:
-                """Evaluates the given answer to the riddle.
+        """Evaluates the given answer to the riddle.
 
         Args:
             answer (str): The given answer to the riddle.
@@ -24,7 +24,7 @@ class Riddle:
         return answer.lower() == self.answer.lower()
 
     def get_hint(self) -> Iterator[str]:
-                """Gives you a hing to the answer of the riddle.
+        """Gives you a hing to the answer of the riddle.
 
         Args:
             answer (str): The given answer to the riddle.
